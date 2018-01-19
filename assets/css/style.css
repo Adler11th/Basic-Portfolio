@@ -3,49 +3,59 @@
     box-sizing: border-box;
 }
 body{
-	background-color: #8e8e8e;
+	background-color: #707070;
 	font-size: 24px;
 	margin: auto;
 }
 header{
 	width: 100%;
-	display: block;
 	height: 90px;
-	background:url("../images/main_bk.jpg");
-	border-bottom: 2px solid #c10053;
-	border-top: 2px solid #c10053;
+	background: #fff;
+	border-bottom: 2px solid #0285d1;
 	position: relative;
-	top:10px;
-	box-shadow: 5px 5px 10px 0px rgba(66,66,66,0.75);
 }
-#name{
+
+/*shadow effect - right side - below - blur - spread - color*/
+header,
+section,
+aside{
+box-shadow: 5px 5px 10px 5px rgba(66,66,66,0.75);
+}
+
+#logo{
 	float: left;
 	text-decoration: none;
-	font-size: 30px;
-	background: #c10053;
+	font-size: 35px;
+	background: #0285d1;
 	color:rgb(209, 211, 214);
 	width: 180px;
-	height: 86px;
+	height: 88px;
 	display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
 }
-#name:hover{
-	background-color:#ff91a5;
+/*added effect to main link*/
+#logo:hover{
+	background-color:#005d93;
 }
 nav{
 	float: right;
 	padding: 30px;
-	color: #c10053;
+	color: #0285d1;
 }
-.a1{
-	color: #c10053;
-}
+
 a{
 	text-decoration: none;
 }
+
 a:hover{
-	color: #ff91a5;
+	color: #005d93;
+}
+
+.menu{
+	font-weight: bold;
+	color: #0285d1;
 }
 
 .container{
@@ -61,7 +71,6 @@ aside{
 	position: relative;
 	background-color: #fff;
 	border:1px solid black;
-	box-shadow: 5px 5px 10px 0px rgba(66,66,66,0.75);
 	top:40px;
 }
 section{
@@ -69,18 +78,17 @@ section{
 	width: 650px;
 }
 aside{
-	color: #c10053;
 	float: right;
 	width: 270px;
+	background-image: url("../images/main_bk.jpg");
 }
 h1{
 	font-size: 35px;
 	text-align: left;
 	margin: auto;
-	color: #c10053;
 	width: 90%;
 	padding: 10px;
-	border-bottom: 2px solid grey;
+	border-bottom: 2px solid #707070;
 	margin-bottom: 10px;
 }
 #myPic{
@@ -98,7 +106,7 @@ h2{
 	margin: auto;
 	margin-bottom: 10px;
 	width: 80%;
-	border-bottom: 2px solid grey;
+	border-bottom: 1px solid #707070;
 }
 .cm_links{
 text-align: center;
@@ -120,11 +128,10 @@ footer{
 	height: 2em;
 	width: 100%;
 	clear:both;
-	display: block;
-	background-color: #707070;
+	background-color: #4d4d4d;
 	text-align: center;
 	color: white;
 	font-size: 50%;
 	padding: 2em;
-	border-top: 0.3em solid #c10053;
+	border-top: 0.2em solid #0285d1;
 }
